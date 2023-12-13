@@ -1,0 +1,118 @@
+@media(max-width:1000px){
+.footer_div{
+    width: auto;
+}
+.logo_group{
+    min-width: 210px;
+}
+.main_blocks{
+width: 100%;
+}
+.main_block{
+    margin-left: auto;
+    margin-right: auto;
+}
+.Color_inputs{
+    margin-top: 5%;
+    min-width: 300px;
+}
+.sort{
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer_div_block input{
+    width: auto;
+}
+}
+@media(max-width:900px){
+    .logo_text_gr{
+    width: auto;
+    }
+    .header_profile_img_group{
+        display: none;
+    }
+    .logo_text_gr{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .burger{
+        position: relative;
+    }
+    .burger_img{
+        width: 20px;
+        border: none;
+        z-index: 2;
+        display: block;
+    }
+    .burger_img_button{
+       background-color: #ffffff;
+       border: none; 
+       z-index: 2;
+       display: block;
+       cursor: pointer;
+    }
+    .ul_header{
+        position: fixed;
+        flex-direction: column;
+        z-index: 9;
+        font-size: 30px;
+        
+        background-color: var(--color-header);
+    
+        align-items: flex-end;
+        gap: 20px;
+        right: 0;
+        padding: 40px 20px 50px 30px;
+        top: 50px;
+        width: 220px;
+    
+        transform: translateX(110%);
+    
+        transition: all .3s ease-in-out;
+    align-items: center;
+    }
+    .ul_header.active {
+        display: flex;
+        transform: translateX(0%);
+        background-color:  rgba(35, 107, 38, 0.8);
+        align-items: flex-start;
+        border-radius: 30px;
+    }
+    .burger_img_button {
+        display: block;
+    }
+    .burger_img_button.close span {
+        height: 0;
+    }
+    .burger_img_button.close span::after,
+    .burger_img_button.close span::before {
+        top: 0;
+    }
+    .burger_img_button.close span::after {
+        transform: rotate(45deg);
+    }
+    .burger_img_button.close span::before {
+        transform: rotate(-45deg);
+    }
+}
+@media(max-width:370px){
+    .Color_inputs{
+        margin-top: 0;
+        min-width: 300px;
+    }
+    .footer_div_text{
+        font-size: 32px;
+        margin: 0;
+    }
+    .sort{
+        font-size: 12px;
+        max-width: 300px;
+    }
+    .top_sort{
+        min-width: 70px;
+    }
+    .down_sort{
+        min-width: 70px;
+    }
+}
